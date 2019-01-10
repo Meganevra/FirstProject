@@ -30,3 +30,14 @@ C:\Users\shustov\Documents\Visual Studio 2017\Projects\WindowsFormsApplication1\
 C:\Users\shustov\Documents\Visual Studio 2017\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
 C:\Users\shustov\Documents\Visual Studio 2017\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\shustov\Documents\Visual Studio 2017\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form2.resources
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojAssemblyReference.cache
