@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace TestServersConnection
 {
     partial class Form1
     {
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -36,7 +35,9 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.changePathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newServersListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,8 +50,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.ErrorBox = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +71,6 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(75, 23);
             this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button2
             // 
@@ -114,22 +112,38 @@
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1});
+            this.toolStripDropDownButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(761, 25);
             this.toolStrip1.TabIndex = 6;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButton1
+            // toolStripDropDownButton1
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.changePathToolStripMenuItem,
+            this.newServersListToolStripMenuItem});
+            this.toolStripDropDownButton1.Image = global::WindowsFormsApplication1.Properties.Resources.white_cogwheel_318_350121;
+            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(29, 22);
+            this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
+            // 
+            // changePathToolStripMenuItem
+            // 
+            this.changePathToolStripMenuItem.Name = "changePathToolStripMenuItem";
+            this.changePathToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.changePathToolStripMenuItem.Text = "change path";
+            this.changePathToolStripMenuItem.Click += new System.EventHandler(this.changePathToolStripMenuItem_Click);
+            // 
+            // newServersListToolStripMenuItem
+            // 
+            this.newServersListToolStripMenuItem.Name = "newServersListToolStripMenuItem";
+            this.newServersListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newServersListToolStripMenuItem.Text = "new servers list";
+            this.newServersListToolStripMenuItem.Click += new System.EventHandler(this.newServersListToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -235,34 +249,11 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(7, 137);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 47);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "change path";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(95, 138);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(67, 46);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "create servers list";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Visible = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(761, 196);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.ErrorBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -299,7 +290,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -312,8 +302,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox ErrorBox;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
+        private System.Windows.Forms.ToolStripMenuItem changePathToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newServersListToolStripMenuItem;
     }
 }
 

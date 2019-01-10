@@ -1,0 +1,11 @@
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\Test servers connection.csproj.GenerateResource.cache
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\Test servers connection.csproj.CoreCompileInputs.cache
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\Test servers connection.csprojAssemblyReference.cache
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\TestServersConnection.ServersList.resources
+C:\Users\shustov\Documents\GitProjects\Test_connection\FirstProject\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\TestServersConnection.Form1.resources

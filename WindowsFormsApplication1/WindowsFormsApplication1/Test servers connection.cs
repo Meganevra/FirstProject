@@ -12,7 +12,7 @@ using System.Net.NetworkInformation;
 using System.Windows.Forms;
 using System.Collections;
 
-namespace WindowsFormsApplication1
+namespace TestServersConnection
 {
     public partial class Form1 : Form
     {
@@ -62,7 +62,6 @@ namespace WindowsFormsApplication1
                 {
                     ErrorBox.Visible = true;
                     ErrorBox.Text = "Wrong path to txt document";
-                    button4.Visible = true;
                     
                 }
             }
@@ -72,11 +71,7 @@ namespace WindowsFormsApplication1
                 Console.WriteLine("Error" );
             }
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -87,26 +82,20 @@ namespace WindowsFormsApplication1
             ErrorBox.Text = "";
             ErrorBox.Visible = false;
         }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
+                    
+                
+        private void changePathToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
-            form.Show();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            toolStripButton1_Click(sender, e);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
+            if(openFileDialog1.ShowDialog() == DialogResult.Cancel)
                 return;
             Properties.Settings.Default.Path = openFileDialog1.FileName;
             Properties.Settings.Default.Save();
-            button2_Click(sender, e);
-            button1_Click(sender, e);
+        }
+
+        private void newServersListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ServersList form = new ServersList();
+            form.Show();
         }
     }
 }
